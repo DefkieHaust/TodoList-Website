@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 62.5% 1rem = 10px; */
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    width: 100vw;
+    height: 100vh;
+    background: /* linear-gradient(rgba(10, 1, 36, 0.13), rgba(10, 4, 88, 0.6)), */url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjEwMTYtYy0wOF8xLWtzaDZtemEzLmpwZw.jpg') no-repeat center center/cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 5rem auto;
+    background: rgba(199, 198, 218, 0.6);
+    border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: 1px 4px 5px rgba(0,0,0,0.6);
+}
+
+.header {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.header span {
+    margin-top: -0.25rem;
+}
+
+.addTodo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.addTodo label {
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.addTodo select, input {
+    padding: 0.65rem 1rem;
+    border: none;
+    width: 100%;
+    /* border-radius: 0.4rem; */
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    color: #333;
+    box-shadow: 1px 3px 4px rgba(0,0,0,0.2);
+}
+
+.addTodo button,
+ul li button{
+    background-color: #333;
+    color: #eee;
+    border: none;
+    padding: 0.65rem 1rem;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    box-shadow: 1px 3px 4px rgba(0,0,0,0.2);
+    /* margin-left: -1rem; */
+    cursor: pointer;
+}
+
+ul li button {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* gap: 2rem; */
+    margin: 1rem 0;
+}
+
+ul li input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    padding: 0.65rem 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.edit:hover {
+    background-color: rgb(88, 150, 88);
+}
+
+.delete:hover {
+    background-color: rgb(243, 100, 100);
+}
+
+.none {
+    display: none;
+}
+
+#listRemoveBtn {
+    border-radius: 0%;
+}
